@@ -1,0 +1,531 @@
+/* Resetar CSS */
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+
+}
+/* Configurações gerais */
+body{
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+:root{
+    --fonte1: 'Barlow', sans-serif;
+    --fonte2: 'Heebo', sans-serif;
+}
+
+.sobre a:visited{
+    color: #1C2022;
+}
+
+.rodape a:visited{
+    color: #737373;
+}
+
+
+/* Configurações do cabeçalho */
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+    padding: 15.5px 48px;
+    width: 100%;
+    border-bottom: solid rgba(0, 0, 0, 0.123) 1px;
+    font-family: var(--fonte1);
+    text-transform: uppercase;
+    color: black;
+    font-style: italic;
+}
+
+.logo{
+    display: flex;
+    height: 28px;
+    width: 196px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    font-size: 14px;
+    color: #1C2022;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: Barlow, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sobre a:hover, .rodape a:hover{
+    text-decoration: underline;
+}
+
+.menu-item{
+    border-bottom: 0.5px solid rgba(137, 43, 226, 0);
+}
+
+.menu-item:hover{
+    border-bottom: 0.5px solid blueviolet;
+}
+
+#unlock-pro::after{
+    content: 'pro';
+    padding: 4px 10px;
+    margin-left: 4px;
+    background-color: #3E54A3;
+    border-radius: 3px;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+
+#github-login{
+    display: flex;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 20px;
+    text-transform: none;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+#github-login::after{
+    display: flex;
+    content: url(images/icone-github.svg);
+    align-items: center;
+}
+
+.menu-item{
+    padding: 10px;
+}
+
+.menu-item:visited{
+    color: #1C2022;
+}
+
+.menu-item:active{
+    color: #3E54A3;
+}
+
+/* Configurações da introdução */
+
+.introducao{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 82px;
+    height: 100vh;
+    gap: 72px;
+    width: 100%
+}
+
+.introducao-texto{
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+
+.introducao-titulo{
+    font-family: var(--fonte1);
+    font-size: 52px;
+    color: #3E54A3;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+.decoracao-improve{
+    text-decoration: underline dotted;
+}
+
+
+.introducao-subtitulo{
+    font-family: var(--fonte2);
+    color: #1C2022;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.introducao-botao{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(237, 44, 73);
+    font-size: 17px;
+    border-radius: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.introducao-botao::after{
+    display: flex;
+    content: url(images/icone-github.svg);
+}
+
+.introducao-botao:hover{
+    text-decoration: underline;
+}
+
+.imagem-introducao{
+    width: 510px;
+    height: 420px;
+}
+
+/* Configurações da pagina Como funciona */
+
+.titulo-principal-como-funciona{
+    text-align: center;
+    font-family: var(--fonte1);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.como-funciona{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-content: center;
+    margin-top: 100px;
+
+}
+
+.item-como-funciona{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 280px;
+    gap: 15px;
+}
+
+.titulo-como-funciona{
+    font-family: var(--fonte1);
+    font-size: 24px;
+}
+
+.paragrafo-como-funciona{
+    font-family: var(--fonte2);
+    font-size: 16px;
+}
+
+.imagem-como-funciona{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-self: center;
+}
+
+/* Pagina ultimos desafios */
+
+.div-desafios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte1);
+    text-transform: uppercase;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.subdiv-desafios{
+    display: flex;
+    background-color: #3E54A3;
+    height: 300px;
+    justify-content: center;
+    padding: 0px 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.titulo-desafios{
+    padding-top: 70px;
+    color: white;
+}
+
+.desafios{
+    display: flex;
+    flex-wrap: wrap;
+    column-count: auto;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    border: #3E54A3 solid 0.5px;
+    justify-content: center;
+    font-size: larger;
+    color: #3E54A3;
+    height: 450px;
+    font-style: italic;
+    font-weight: bolder;
+    width: 300px;
+    background-image: url(images/fundo.jpg);
+    margin: 5px;
+    overflow: hidden;
+}
+
+
+ol{
+    columns: 3;
+    
+}
+
+.desafio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    color: #3E54A3;
+    height: 450px;
+    font-style: italic;
+    font-weight: bolder;
+    border: #3E54A3 solid 0.5px;
+    width: 300px;
+    background-image: url(images/fundo.jpg);
+    margin: 10px;
+    transition: transform .5s ease;
+
+}
+
+/* Pagina slack*/
+
+.slack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 600px;
+    background-color: #3E54A3;
+    border-radius: 20px;
+    color: white;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.informacoes-slack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    gap: 40px;
+}
+
+.logo-slack{
+    margin-top: 80px;
+}
+
+.titulo-slack{
+    font-family: var(--fonte1);
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.paragrafo-slack{
+    font-family: var(--fonte1);
+    font-size: 28px;
+    text-align: center;
+}
+
+#caixa-email{
+    height: 35px;
+    width: 470px;
+    font-size: 15px;
+    background-color: #3E54A3;
+    border: solid white 0.5px;
+    padding: 10px;
+    color: white;
+}
+
+
+
+.botao-submit{
+    height: 42px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #3E54A3;
+    font-family: var(--fonte1);
+    font-weight: bolder;
+}
+
+.botao-submit:hover{
+    text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter{
+   display: flex;
+   margin-top: 120px;
+   justify-content: center;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 120px;
+}
+
+.texto-newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    max-width: 50%;
+}
+
+.titulo-newsletter{
+    font-family: var(--fonte1);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.paragrafo-newsletter{
+    font-family: var(--fonte2);
+    font-size: 28px;
+}
+
+.checkbox-newsletter{
+    font-size: 16px;
+    font-family: var(--fonte2);
+}
+
+.newsletter-email{
+    display: flex;
+}
+
+#caixa-email-newsletter{
+    height: 40px;
+    width: 470px;
+    border: #1C2022 solid 0.5px;
+    padding: 4px;
+}
+
+.botao-submit-newsletter{
+    height: 42px;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--fonte1);
+    font-weight: bolder;
+    background-color: rgb(237, 44, 73);;
+}
+
+.imagem-newsletter{
+    display: flex;
+}
+
+/* Pagina sobre */
+
+.sobre{
+    display: flex;
+    width: 100%;
+    padding: 80px 50px;
+    gap: 100px;
+    border-top: solid black 0.5px;
+    border-bottom: solid black 0.5px;
+    
+}
+
+.frontend-mentor{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.paragrafo-frontend-mentor{
+    font-family: var(--fonte2);
+    font-size: 14px;
+    text-align: justify;
+}
+
+.explorar .comunidade{
+    display: flex;
+    flex-direction: column;
+    /* color: #1C2022; */
+}
+
+.menu-explorar, .menu-comunidade{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-family: var(--fonte1);
+}
+
+/* .menu-explorar:visited, .menu-comunidade:visited{
+    color: black;
+} */
+
+.titulo-explorar, .titulo-comunidade, .titulo-frontend-mentor{
+    font-family: var(--fonte1);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.redes-sociais{
+    margin-left: 150px;
+}
+
+.menu-redes{
+    display: flex;
+    gap: 8px;
+}
+
+.redes-sociais img{
+    height: 50px;
+    width: 50px;
+}
+
+/* rodapé */
+.rodape{
+    display: flex;
+    gap: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    color: #737373;
+    font-size: 12px;
+    font-family: var(--fonte2);
+}
+
+.menu-rodape{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
